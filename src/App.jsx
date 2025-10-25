@@ -2,7 +2,7 @@ function App() {
 
   return (
     <>
-      <h1>Hello Soubhagya Sai</h1>
+      <h1>Hello Soubhagya</h1>
     </>
   )
 }
