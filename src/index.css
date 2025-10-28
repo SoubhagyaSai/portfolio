@@ -1,1 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --font-ubuntu: "Ubuntu", "sans-serif"
+}
+*{
+    font-family: var(--font-ubuntu);
+}
+:root {
+  --bg-color: #000;
+  --bg-grid-color: #222;
+  --bg-size: 40px 40px;
+  --bg-image: 
+    linear-gradient(90deg, var(--bg-grid-color) 1px, #0000 0),
+    linear-gradient(var(--bg-grid-color) 1px, #0000 0);
+}
+
+.bg-bg {
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-size: var(--bg-size);
+}

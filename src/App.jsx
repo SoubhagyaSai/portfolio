@@ -1,8 +1,11 @@
+import Navbar from "./components/Navbar"
+
 function App() {
 
   return (
     <>
-      <h1>Hello Soubhagya</h1>
+      <Navbar/>
+      {/* <div className="h-screen w-full bg-bg"></div> */}
     </>
   )
 }
