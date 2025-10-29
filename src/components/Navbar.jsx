@@ -1,12 +1,11 @@
 import { useState } from "react";
-import React from "react";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-       <nav className="relative bg-gray-900 text-white after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+       <nav className="sticky top-0 bg-black shadow z-50 text-white after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+      <div className="mx-auto max-w-7xl p-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
 
           {/* LEFT: Logo */}

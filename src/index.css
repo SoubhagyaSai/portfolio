@@ -21,3 +21,50 @@
   background-image: var(--bg-image);
   background-size: var(--bg-size);
 }
+
+.prime-btn:hover {
+  box-shadow: rgb(34 75 255 / 25%) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.prime-btn:hover .icon {
+  rotate: 320deg;
+}
+.sec-btn:hover {
+  box-shadow: rgb(255 255 255 / 18%) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.mouse_scroll {
+    border: 1px solid #fff;
+    padding: 14px;
+    border-radius: 2rem;
+    animation: hover 1.3s linear infinite;
+}
+.scroll-arrow {
+  display: block;
+  transform: rotate(45deg);
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  animation: scroll 1s infinite alternate;
+  animation-delay: var(--delay);
+}
+@keyframes scroll {
+   0% {
+     opacity: 0;
+   }
+   50% {
+     opacity: .5;
+   }
+   100% {
+     opacity: 1;
+   }
+}
+@keyframes hover {
+  0%, 100% {
+    transform: translateY(0px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.219);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
