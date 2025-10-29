@@ -5,11 +5,11 @@ import Navbar from "./components/Navbar"
 function App() {
 
   return (
-    <>
+    <div className="text-white bg-slate-900">
       <Navbar/>
       <Hero/>
       <Footer/>
-    </>
+    </div>
   )
 }
 
