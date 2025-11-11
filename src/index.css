@@ -68,3 +68,13 @@
     transform: translateY(20px);
   }
 }
+
+@media (max-width: 425px){
+  .mouse_scroll {
+    padding: 12px;
+  }
+  .scroll-arrow {
+    width: 12px;
+    height: 12px;
+  }
+}

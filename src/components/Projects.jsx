@@ -1,0 +1,115 @@
+import { GiCheckMark } from "react-icons/gi";
+import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
+import proj1 from '../assets/project_img/sand2sky.png';
+
+const Projects = () => {
+
+    const projectData = [
+        {
+            title: "Sand2sky",
+            live: true,
+            img: proj1,
+            desc: "It is a Real Estate Web Application. showing Properties in Bhubaneswar and Other Cities",
+            key_point: [
+                "Property listings based on geographic location.",
+                "Search and filtering Properties",
+                "Advertise according to users location"
+            ],
+            tech: ["React", "Tailwind CSS", "React Router Dom", "Javascript", "Axios", "Shimmer"],
+            live_link: "https://sand2sky.com",
+            code_link: null
+        },
+        {
+            title: "Sand2sky",
+            live: true,
+            img: proj1,
+            desc: "It is a Real Estate Web Application. showing Properties in Bhubaneswar and Other Cities",
+            key_point: [
+                "Property listings based on geographic location.",
+                "Search and filtering Properties",
+                "Advertise according to users location"
+            ],
+            tech: ["React", "Tailwind CSS", "React Router Dom", "Javascript", "Axios", "Shimmer"],
+            live_link: "https://sand2sky.com",
+            code_link: null
+        },
+        {
+            title: "Sand2sky",
+            live: true,
+            img: proj1,
+            desc: "It is a Real Estate Web Application. showing Properties in Bhubaneswar and Other Cities",
+            key_point: [
+                "Property listings based on geographic location.",
+                "Search and filtering Properties",
+                "Advertise according to users location"
+            ],
+            tech: ["React", "Tailwind CSS", "React Router Dom", "Javascript", "Axios", "Shimmer"],
+            live_link: "https://sand2sky.com",
+            code_link: null
+        }
+    ]
+
+  return (
+    <section className="py-5 md:py-8" id="projects">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 items-center">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-gray-10 text-center text-gray-300">
+          Projects
+        </h2>
+        <div className="flex flex-wrap items-center flex-col md:flex-row justify-between gap-5">
+        {projectData.map((proj, index) => (
+            <div className="border border-gray-800 bg-[#131123] w-auto md:w-[48%] lg:w-[31%] xl:w-[32%] rounded-2xl p-5" key={index}>
+            <div className="h-[200px] rounded-xl w-full">
+                <img src={proj.img} alt="project image" className="w-full h-full rounded-xl"/>
+            </div>
+            <div className="mt-5 flex items-center justify-between">
+              <h4 className="text-indigo-600 text-xl sm:text-2xl font-semibold">
+                {proj.title}
+              </h4>
+              {proj.live ? (
+                    <div className="flex items-center justify-center rounded-full px-4 py-1 border text-gray-300 bg-green-700 border-green-500">
+                        <small className="font-semibold">Live</small>
+                    </div>
+                ) : (
+                    <div className="flex items-center justify-center rounded-full px-4 py-1 border text-gray-800 bg-gray-700 border-gray-500">
+                        <small className="font-semibold">Live</small>
+                    </div>
+                )}
+            </div>
+            <p className="mt-2 text-base text-gray-300">{proj.desc}</p>
+            <ul class="mt-5 space-y-2">
+                {proj.key_point.map((point, i) => (
+                    <li
+                        key={i}
+                        className="flex items-center gap-2 text-sm text-gray-300"
+                    >
+                        <GiCheckMark className="text-indigo-600" /> {point}
+                    </li>
+                ))}
+            </ul>
+            <div className="flex flex-wrap items-center gap-2 mt-5">
+                {proj.tech.map((tech, i) => (
+                    <div
+                        key={i}
+                        className="flex items-center justify-center py-1 px-3 rounded-full border border-gray-600 bg-gray-800 text-sm text-gray-300"
+                    >
+                        {tech}
+                    </div>
+                ))}
+            </div>
+            <div className="flex items-center gap-5 mt-5">
+                <a href={proj.live_link} target="_blank" className="flex items-center gap-2 text-indigo-600 hover:text-indigo-500 text-sm font-semibold">
+                    <BsBoxArrowUpRight className="text-base font-semibold"/> Live Demo
+                </a>
+                <a href={proj.code_link} target="_blank" className="flex items-center gap-2 text-indigo-600 hover:text-indigo-500 text-sm font-semibold">
+                    <BsGithub className="text-base font-semibold"/> Code
+                </a>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

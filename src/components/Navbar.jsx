@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
        <nav className="sticky top-0 bg-black shadow z-50 text-white after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
-      <div className="mx-auto max-w-7xl p-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl py-0 md:p-2 px-4 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
 
           {/* LEFT: Logo */}
@@ -57,15 +57,36 @@ const Navbar = () => {
           {/* RIGHT: Nav links (desktop) */}
           <div className="hidden sm:flex flex-1 items-center justify-end">
             <div className="flex space-x-4">
-              {["Home", "About", "Skills", "Projects", "Contact"].map((link) => (
                 <a
-                  key={link}
-                  href="#"
+                  href="#home"
                   className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
                 >
-                  {link}
+                  Home
                 </a>
-              ))}
+                <a
+                  href="#about"
+                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+                >
+                  About
+                </a>
+                <a
+                  href="#skills"
+                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+                >
+                  Skills
+                </a>
+                <a
+                  href="#projects"
+                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+                >
+                  Projects
+                </a>
+                <a
+                  href="#contact"
+                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+                >
+                  Contact
+                </a>
             </div>
           </div>
         </div>
@@ -77,16 +98,37 @@ const Navbar = () => {
           menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="space-y-1 px-2 pt-2 pb-3 bg-gray-900">
-          {["Home", "About", "Skills", "Projects", "Contact"].map((link) => (
+        <div className="space-y-1 px-2 pt-2 pb-3 bg-gray-900 absolute w-full">
             <a
-              key={link}
               href="#"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
-              {link}
+              Home
             </a>
-          ))}
+            <a
+              href="#"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+            >
+              About
+            </a>
+            <a
+              href="#"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+            >
+              Skills
+            </a>
+            <a
+              href="#"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+            >
+              Projects
+            </a>
+            <a
+              href="#"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+            >
+              Contact
+            </a>
         </div>
       </div>
     </nav>
