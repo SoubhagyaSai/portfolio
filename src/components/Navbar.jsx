@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="relative flex h-16 items-center justify-between">
 
           {/* LEFT: Logo */}
-          <h2 className="text-3xl font-bold text-indigo-500">Soubhagya</h2>
+          <h2 className="text-3xl font-bold text-indigo-500">Soubhagya Sai</h2>
 
           {/* MOBILE MENU BUTTON */}
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -100,31 +100,31 @@ const Navbar = () => {
       >
         <div className="space-y-1 px-2 pt-2 pb-3 bg-gray-900 absolute w-full">
             <a
-              href="#"
+              href="#home"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
               Home
             </a>
             <a
-              href="#"
+              href="#about"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
               About
             </a>
             <a
-              href="#"
+              href="#skills"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
               Skills
             </a>
             <a
-              href="#"
+              href="#projects"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
               Projects
             </a>
             <a
-              href="#"
+              href="#contact"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
               Contact

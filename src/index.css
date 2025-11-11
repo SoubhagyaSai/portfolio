@@ -68,6 +68,7 @@
     transform: translateY(20px);
   }
 }
+<<<<<<< HEAD
 
 @media (max-width: 425px){
   .mouse_scroll {
@@ -78,3 +79,5 @@
     height: 12px;
   }
 }
+=======
+>>>>>>> 2b0131f299183b9a25d366567c90ee9c2e0fb0b7
