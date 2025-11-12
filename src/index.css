@@ -16,6 +16,11 @@
     linear-gradient(var(--bg-grid-color) 1px, #0000 0);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* adjust based on your navbar height */
+}
+
 .bg-bg {
   background-color: var(--bg-color);
   background-image: var(--bg-image);

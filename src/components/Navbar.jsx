@@ -101,30 +101,35 @@ const Navbar = () => {
         <div className="space-y-1 px-2 pt-2 pb-3 bg-gray-900 absolute w-full">
             <a
               href="#home"
+              onClick={() => setMenuOpen(false)}
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
               Home
             </a>
             <a
               href="#about"
+              onClick={() => setMenuOpen(false)}
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
               About
             </a>
             <a
               href="#skills"
+              onClick={() => setMenuOpen(false)}
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
               Skills
             </a>
             <a
               href="#projects"
+              onClick={() => setMenuOpen(false)}
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
               Projects
             </a>
             <a
               href="#contact"
+              onClick={() => setMenuOpen(false)}
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
             >
               Contact

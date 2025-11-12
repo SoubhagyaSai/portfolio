@@ -1,4 +1,5 @@
 import { SiJavascript, SiReact, SiRedux, SiNextdotjs, SiJquery, SiHtml5, SiCss3, SiBootstrap, SiTailwindcss, SiSass } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 const Skills = () => { 
 
@@ -12,7 +13,8 @@ const Skills = () => {
         { label: "CSS 3", icon: <SiCss3 color="#1572B6"/> },
         { label: "Bootstrap 5", icon: <SiBootstrap color="#7952B3"/> },
         { label: "Tailwind CSS", icon: <SiTailwindcss color="#06B6D4"/> },
-        { label: "SCSS", icon: <SiSass color="#CC6699"/> }
+        { label: "SCSS", icon: <SiSass color="#CC6699"/> },
+        { label: "Framer Motion", icon: <TbBrandFramerMotion color="#0055FF"/> }
     ];
     
   return (
