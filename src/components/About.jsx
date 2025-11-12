@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const About = () => {
   return (
     // <div className="py-[50px]">
@@ -5,10 +7,20 @@ const About = () => {
     // </div>
     <section className="py-5 md:pt-16 md:pb-8" id="about">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 items-center">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-gray-10 text-center text-gray-300">
+        <motion.h2 
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-gray-10 text-center text-gray-300">
           About Me
-        </h2>
-        <div className="p-5 md:p-10 rounded-2xl border border-gray-800 bg-[#131123] xl:w-5xl mx-auto mb-6">
+        </motion.h2>
+        <motion.div 
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="p-5 md:p-10 rounded-2xl border border-gray-800 bg-[#131123] xl:w-5xl mx-auto mb-6">
           <p className="text-base leading-relaxed text-gray-300 text-center">
             Hi, I’m{" "}
             <span className="font-semibold text-indigo-600">
@@ -19,8 +31,13 @@ const About = () => {
             strong foundation in React, Tailwind, and JavaScript, I focus on
             creating performant web applications that look great on any device.
           </p>
-        </div>
-        <div className="mb-3 p-5 md:p-10 rounded-2xl border border-gray-800 bg-[#131123] xl:w-5xl mx-auto">
+        </motion.div>
+        <motion.div 
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="mb-3 p-5 md:p-10 rounded-2xl border border-gray-800 bg-[#131123] xl:w-5xl mx-auto">
           <div className="bg-gray-800 inline-block text-base py-2 px-3 rounded-lg text-gray-400">
             Experience
           </div>
@@ -62,8 +79,13 @@ const About = () => {
               collaboration.
             </li>
           </ul>
-        </div>
-        <div className="mb-3 p-5 md:p-10 rounded-2xl border border-gray-800 bg-[#131123] xl:w-5xl mx-auto">
+        </motion.div>
+        <motion.div 
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="mb-3 p-5 md:p-10 rounded-2xl border border-gray-800 bg-[#131123] xl:w-5xl mx-auto">
           <div className="bg-gray-800 inline-block text-base sm:text-lg py-2 px-3 rounded-lg text-gray-400">
             Experience
           </div>
@@ -97,8 +119,13 @@ const About = () => {
               maintainability and scalability.
             </li>
           </ul>
-        </div>
-        <div className="mb-3 p-5 md:p-10 rounded-2xl border border-gray-800 bg-[#131123] xl:w-5xl mx-auto">
+        </motion.div>
+        <motion.div 
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="mb-3 p-5 md:p-10 rounded-2xl border border-gray-800 bg-[#131123] xl:w-5xl mx-auto">
           <div className="bg-gray-800 inline-block text-base sm:text-lg py-2 px-3 rounded-lg text-gray-400">
             Experience
           </div>
@@ -129,8 +156,13 @@ const About = () => {
               are compatible with different browsers and versions.
             </li>
           </ul>
-        </div>
-        <div className="mb-3 p-5 md:p-10 rounded-2xl border border-gray-800 bg-[#131123] xl:w-5xl mx-auto">
+        </motion.div>
+        <motion.div 
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="mb-3 p-5 md:p-10 rounded-2xl border border-gray-800 bg-[#131123] xl:w-5xl mx-auto">
           <div className="bg-gray-800 inline-block text-base sm:text-lg py-2 px-3 rounded-lg text-gray-400">
             Internship
           </div>
@@ -150,7 +182,7 @@ const About = () => {
             <li className="text-base text-gray-300">Developed responsive user interfaces using HTML, CSS, and JavaScript to ensure cross-device compatibility.</li>
             <li className="text-base text-gray-300">Collaborated with design teams to translate Figma or UI mockups into pixel-perfect, interactive web pages.</li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

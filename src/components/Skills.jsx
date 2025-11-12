@@ -1,5 +1,6 @@
 import { SiJavascript, SiReact, SiRedux, SiNextdotjs, SiJquery, SiHtml5, SiCss3, SiBootstrap, SiTailwindcss, SiSass } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 const Skills = () => { 
 
@@ -20,17 +21,27 @@ const Skills = () => {
   return (
     <section className="py-5 md:py-8" id="skills">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 items-center">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-gray-10 text-center text-gray-300">
+        <motion.h2 
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-gray-10 text-center text-gray-300">
           My Skills
-        </h2>
-        <div className="flex flex-wrap gap-5 items-center justify-center mx-auto xl:w-5xl">
+        </motion.h2>
+        <motion.div 
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="flex flex-wrap gap-5 items-center justify-center mx-auto xl:w-5xl">
           {skills.map((skill, index) => (
             <div key={index} className="py-3 px-5 flex items-center gap-2 rounded-full border border-gray-800 bg-[#131123] cursor-pointer transform transition-all hover:-translate-y-[3px]">
                 <span className="text-2xl">{skill.icon}</span>
                 <p className="text-gray-300 text-base sm:text-sm font-semibold">{skill.label}</p>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
