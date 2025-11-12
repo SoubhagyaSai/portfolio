@@ -9,7 +9,9 @@ const Navbar = () => {
         <div className="relative flex h-16 items-center justify-between">
 
           {/* LEFT: Logo */}
-          <h2 className="text-3xl font-bold text-indigo-500">Soubhagya Sai</h2>
+          <h2 
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="text-3xl font-bold text-indigo-500 cursor-pointer">Soubhagya Sai</h2>
 
           {/* MOBILE MENU BUTTON */}
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
