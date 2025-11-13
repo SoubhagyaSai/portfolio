@@ -21,34 +21,7 @@ const Projects = () => {
             live_link: "https://sand2sky.com",
             code_link: null
         },
-        {
-            title: "Sand2sky",
-            live: true,
-            img: proj1,
-            desc: "It is a Real Estate Web Application. showing Properties in Bhubaneswar and Other Cities",
-            key_point: [
-                "Property listings based on geographic location.",
-                "Search and filtering Properties",
-                "Advertise according to users location"
-            ],
-            tech: ["React", "Tailwind CSS", "React Router Dom", "Javascript", "Axios", "Shimmer"],
-            live_link: "https://sand2sky.com",
-            code_link: null
-        },
-        {
-            title: "Sand2sky",
-            live: true,
-            img: proj1,
-            desc: "It is a Real Estate Web Application. showing Properties in Bhubaneswar and Other Cities",
-            key_point: [
-                "Property listings based on geographic location.",
-                "Search and filtering Properties",
-                "Advertise according to users location"
-            ],
-            tech: ["React", "Tailwind CSS", "React Router Dom", "Javascript", "Axios", "Shimmer"],
-            live_link: "https://sand2sky.com",
-            code_link: null
-        }
+        
     ]
 
   return (

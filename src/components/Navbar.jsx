@@ -61,31 +61,31 @@ const Navbar = () => {
             <div className="flex space-x-4">
                 <a
                   href="#home"
-                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-[#131123] hover:text-white transition"
                 >
                   Home
                 </a>
                 <a
                   href="#about"
-                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-[#131123] hover:text-white transition"
                 >
                   About
                 </a>
                 <a
                   href="#skills"
-                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-[#131123] hover:text-white transition"
                 >
                   Skills
                 </a>
                 <a
                   href="#projects"
-                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-[#131123] hover:text-white transition"
                 >
                   Projects
                 </a>
                 <a
                   href="#contact"
-                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+                  className="rounded-md px-3 py-2 text-md font-medium text-gray-300 hover:bg-[#131123] hover:text-white transition"
                 >
                   Contact
                 </a>
@@ -104,35 +104,35 @@ const Navbar = () => {
             <a
               href="#home"
               onClick={() => setMenuOpen(false)}
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#131123] hover:text-white transition"
             >
               Home
             </a>
             <a
               href="#about"
               onClick={() => setMenuOpen(false)}
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#131123] hover:text-white transition"
             >
               About
             </a>
             <a
               href="#skills"
               onClick={() => setMenuOpen(false)}
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#131123] hover:text-white transition"
             >
               Skills
             </a>
             <a
               href="#projects"
               onClick={() => setMenuOpen(false)}
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#131123] hover:text-white transition"
             >
               Projects
             </a>
             <a
               href="#contact"
               onClick={() => setMenuOpen(false)}
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 hover:text-white transition"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#131123] hover:text-white transition"
             >
               Contact
             </a>
