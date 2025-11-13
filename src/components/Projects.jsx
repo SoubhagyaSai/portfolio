@@ -1,6 +1,7 @@
 import { GiCheckMark } from "react-icons/gi";
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import proj1 from '../assets/project_img/sand2sky.png';
+import proj2 from '../assets/project_img/jhadeswar.png';
 import { motion } from "framer-motion";
 
 
@@ -21,6 +22,22 @@ const Projects = () => {
             live_link: "https://sand2sky.com",
             code_link: null
         },
+        {
+            title: "JIS",
+            full_name: "Jhadeswar International School",
+            live: true,
+            img: proj2,
+            desc: "This project is a responsive school website designed to provide information, communication, and accessibility for students, parents, and teachers.",
+            key_point: [
+                "Displays school details, admissions, academics, and updates in a clear, organized layout.",
+                "Fully optimized for desktops, tablets, and mobile devices",
+                "Includes sections like gallery, news, and contact forms for better engagement and communication.",
+                "Admin-Friendly Management: Designed to easily update content like news, images, and notices without major code changes."
+            ],
+            tech: ["Javascript", "CSS 3", "HTML 5", "jQuery"],
+            live_link: "https://www.jisodisha.in/",
+            code_link: null
+        },
         
     ]
 
@@ -35,7 +52,7 @@ const Projects = () => {
         className="text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-gray-10 text-center text-gray-300">
           Projects
         </motion.h2>
-        <div className="flex flex-wrap items-center flex-col md:flex-row justify-between gap-5">
+        <div className="flex flex-wrap items-stretch flex-col md:flex-row justify-center gap-5">
         {projectData.map((proj, index) => (
             <motion.div 
             whileInView={{ opacity: 1, y: 0 }}
@@ -47,7 +64,7 @@ const Projects = () => {
                     <img src={proj.img} alt="project image" className="w-full h-full rounded-xl"/>
                 </div>
                 <div className="mt-5 flex items-center justify-between">
-                <h4 className="text-indigo-600 text-xl sm:text-2xl font-semibold">
+                <h4 className="text-indigo-600 text-xl sm:text-2xl font-semibold" title={proj.full_name}>
                     {proj.title}
                 </h4>
                 {proj.live ? (
@@ -60,14 +77,15 @@ const Projects = () => {
                         </div>
                     )}
                 </div>
-                <p className="mt-2 text-base text-gray-300">{proj.desc}</p>
+                <p className="mt-2 text-base text-gray-300 clamp-2-lines" title={proj.desc}>{proj.desc}</p>
                 <ul class="mt-5 space-y-2">
                     {proj.key_point.map((point, i) => (
                         <li
                             key={i}
                             className="flex items-center gap-2 text-sm text-gray-300"
+                            title={point}
                         >
-                            <GiCheckMark className="text-indigo-600" /> {point}
+                            <GiCheckMark className="text-indigo-600 shrink-0" /> <span className="clamp-1-lines">{point}</span>
                         </li>
                     ))}
                 </ul>
@@ -81,7 +99,7 @@ const Projects = () => {
                         </div>
                     ))}
                 </div>
-                <div className="flex items-center gap-5 mt-5">
+                <div className="flex items-center gap-5 mt-5 ">
                     <a href={proj.live_link} target="_blank" className="flex items-center gap-2 text-indigo-600 hover:text-indigo-500 text-sm font-semibold">
                         <BsBoxArrowUpRight className="text-base font-semibold"/> Live Demo
                     </a>
