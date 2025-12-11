@@ -37,7 +37,8 @@ const Hero = () => {
         <a href="#projects" class="prime-btn border border-indigo-600 bg-indigo-600 text-gray-300 text-base sm:text-lg font-semibold py-3 sm:py-4 px-6 rounded-xl flex items-center gap-3 cursor-pointer transform transition-all hover:-translate-y-[3px]">
             View my work <BsArrowDownRightCircle className="icon text-xl rotate-280"/>
         </a>
-        <button class="sec-btn border border-gray-300 text-gray-300 text-base sm:text-lg font-semibold py-3 sm:py-4 px-6 rounded-xl flex items-center gap-3 cursor-pointer transform transition-all hover:-translate-y-[3px]">
+        <button class="sec-btn border border-gray-300 text-gray-300 text-base sm:text-lg font-semibold py-3 sm:py-4 px-6 rounded-xl flex items-center gap-3 cursor-pointer transform transition-all hover:-translate-y-[3px]"
+            onClick={() => window.open("public/Soubhagya_Sai_Das_Frontend_Developer_Resume.pdf", "_blank")}>
             Download CV <GoDownload className="text-xl font-semibold"/>
         </button>
       </motion.div>
