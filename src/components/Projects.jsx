@@ -2,6 +2,7 @@ import { GiCheckMark } from "react-icons/gi";
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import proj1 from '../assets/project_img/sand2sky.png';
 import proj2 from '../assets/project_img/jhadeswar.png';
+import proj3 from '../assets/project_img/urbanestates.png';
 import { motion } from "framer-motion";
 
 
@@ -36,6 +37,21 @@ const Projects = () => {
             ],
             tech: ["Javascript", "CSS 3", "HTML 5", "jQuery"],
             live_link: "https://www.jisodisha.in/",
+            code_link: null
+        },
+         {
+            title: "Urban Estates",
+            live: true,
+            img: proj3,
+            desc: "This project is a responsive Real-estate website designed to helps you discover, buy, and invest in premium urban real estate.",
+            key_point: [
+                "Modern urban homes and real estate solutions",
+                "Fully optimized for desktops, tablets, and mobile devices",
+                "Trusted property buying and selling services",
+                "Easy property listing, filtering, and management system."
+            ],
+            tech: ["Javascript", "CSS 3", "HTML 5", "Bootstrap 5"],
+            live_link: "https://www.urbanestates.in/",
             code_link: null
         },
         
