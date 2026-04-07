@@ -68,7 +68,7 @@ const Projects = () => {
             ],
             tech: ["React", "Javascript", "Tailwind"],
             live_link: "https://todo-two-rho-21.vercel.app/",
-            code_link: null
+            code_link: "https://github.com/SoubhagyaSai/todo"
         },
         
     ]
