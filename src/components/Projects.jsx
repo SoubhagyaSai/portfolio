@@ -3,6 +3,7 @@ import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import proj1 from '../assets/project_img/sand2sky.png';
 import proj2 from '../assets/project_img/jhadeswar.png';
 import proj3 from '../assets/project_img/urbanestates.png';
+import proj4 from '../assets/project_img/todo.png';
 import { motion } from "framer-motion";
 
 
@@ -52,6 +53,21 @@ const Projects = () => {
             ],
             tech: ["Javascript", "CSS 3", "HTML 5", "Bootstrap 5"],
             live_link: "https://www.urbanestates.in/",
+            code_link: null
+        },
+        {
+            title: "To-Do App",
+            live: true,
+            img: proj4,
+            desc: "This is a small TO-DO react app which have Task count, completed task and success percentage.",
+            key_point: [
+                "Modern To-Do app",
+                "Fully optimized for desktops, tablets, and mobile devices",
+                "Modern Design",
+                "Showing Statitics."
+            ],
+            tech: ["React", "Javascript", "Tailwind"],
+            live_link: "https://todo-two-rho-21.vercel.app/",
             code_link: null
         },
         
